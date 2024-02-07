@@ -1,0 +1,11 @@
+Missions:
+  - Name: 死灵塔
+    EName: Mot
+    CName: 死灵塔
+    InternalName: SolNode409
+    StarChart: Void
+  - Name: 阿尼塔
+    EName: Ani
+    CName: 阿尼塔
+    InternalName: SolNode405
+    StarChart: Void

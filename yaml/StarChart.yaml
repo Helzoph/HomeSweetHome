@@ -1,0 +1,9 @@
+Void:
+  Name: 虚空
+  Rooms:
+    - Name: 圆树
+      Path: /Lotus/Levels/Orokin/CircularHub1.level
+      Type: I
+    - Name: 电梯
+      Path: /Lotus/Levels/Orokin/LargeTieredIntermediate.level
+      Type: I
