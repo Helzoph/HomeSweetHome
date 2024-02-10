@@ -1,9 +1,12 @@
-Void:
-  Name: 虚空
-  Rooms:
-    - Name: 圆树
-      Path: /Lotus/Levels/Orokin/CircularHub1.level
-      Type: I
-    - Name: 电梯
-      Path: /Lotus/Levels/Orokin/LargeTieredIntermediate.level
-      Type: I
+StarChart:
+  # 星图的名字必须是英文，并且必须与Missions.yaml中的名字一致
+  - Name: Void
+    Rooms:
+      # 地形的名字仅仅只是用来显示在界面上的，可以是中文
+      - Name: 圆树
+        Path: /Lotus/Levels/Orokin/CircularHub1.level
+        # 地形的类型，当前版本暂不支持类型判断，所以可以不填
+        Type: I
+      - Name: 电梯
+        Path: /Lotus/Levels/Orokin/LargeTieredIntermediate.level
+        Type: I

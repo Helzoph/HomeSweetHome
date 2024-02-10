@@ -3,11 +3,11 @@ package main
 import (
 	"flag"
 	"fmt"
+	info "homesweethome/Info"
+	"homesweethome/conf"
+	"homesweethome/file"
+	"homesweethome/logger"
 	"time"
-	info "wfhome/Info"
-	"wfhome/conf"
-	"wfhome/file"
-	"wfhome/logger"
 
 	"github.com/rs/zerolog/log"
 )
@@ -17,13 +17,13 @@ func devMode(level string) {
 	logger.SetupLogger("debug")
 
 	// 读取配置文件
-	conf.LoadConf()
+	conf.LoadConf("yaml")
 
 	// 备份日志文件路径
 	backupPath := "test.log"
 
 	// 读取日志文件
-	file.ReadLog(backupPath)
+	file.ReadLoad(backupPath)
 }
 
 func main() {
@@ -42,7 +42,7 @@ func main() {
 	logger.SetupLogger(*level)
 
 	// 读取配置文件
-	conf.LoadConf()
+	conf.LoadConf("yaml")
 
 	// 开始时间戳
 	star := time.Now().UnixMilli()
@@ -53,8 +53,11 @@ func main() {
 	// 备份日志文件
 	file.CopyLog(backupPath)
 
+	// 删除日志文件
+	defer file.DeleteLog(backupPath)
+
 	// 读取日志文件
-	file.ReadLog(backupPath)
+	file.ReadLoad(backupPath)
 
 	// 当前时间戳
 	now := time.Now().UnixMilli()

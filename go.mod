@@ -1,4 +1,4 @@
-module wfhome
+module homesweethome
 
 go 1.21.6
 
