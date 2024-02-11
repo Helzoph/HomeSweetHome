@@ -3,9 +3,9 @@ package main
 import (
 	"flag"
 	"fmt"
-	info "homesweethome/Info"
 	"homesweethome/conf"
 	"homesweethome/file"
+	"homesweethome/info"
 	"homesweethome/logger"
 	"time"
 

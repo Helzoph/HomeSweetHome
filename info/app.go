@@ -7,10 +7,11 @@ var (
 |     | . |     | -_|__   | | | | -_| -_|  _|     | . |     | -_|
 |__|__|___|_|_|_|___|_____|_____|___|___|_| |__|__|___|_|_|_|___|
 
-https://github.com/Helzoph/HomeSweetHome
-https://gitee.com/Helzoph/HomeSweetHome
-
                                                     -- by Helzoph
+
+https://github.com/Helzoph/HomeSweetHome
+https://gitcode.com/Helzoph/HomeSweetHome
+
 `
 )
 
